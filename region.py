@@ -17,4 +17,4 @@ for path in pathlist:
 with open("region_data/region_mena.csv", mode='r') as infile:
     reader = csv.reader(infile)
     region_mena = {rows[0]:rows[1] for rows in reader}
-#print(region_mena.keys())
+print(region_mena.keys())
