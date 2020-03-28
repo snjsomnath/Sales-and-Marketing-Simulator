@@ -1,12 +1,4 @@
-#creates a dictionary for products to be included in the game
-#each product has a low med high ranking, corresponding to the target group it belongs to
-import csv
-from pathlib import Path
-import os
+import pandas as pd 
 
-product_data = []
-input_file = csv.DictReader(open("product_data/product_data.csv"))
-for row in input_file:
-    product_data.append(row)
-
-print(product_data[0])
+data = pd.read_csv("product_data/product_data.csv") 
+print(data.product_p[data.product_name =='Ted Baker'])

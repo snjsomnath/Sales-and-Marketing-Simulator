@@ -1,8 +1,4 @@
-import csv
-from pathlib import Path
-import os
+import pandas as pd 
 
-region_data = []
-input_file = csv.DictReader(open("region_data/region_data.csv"))
-for row in input_file:
-    region_data.append(row)
+data = pd.read_csv("region_data/region_data.csv") 
+print(data.population[data.name =='europe'])
