@@ -1,12 +1,12 @@
 import csv
-from pathlib import Path
-import os
+#from pathlib import Path
+#import os
 
-pathlist = Path("region_data").glob('**/*.csv')
-for path in pathlist:
+#pathlist = Path("region_data").glob('**/*.csv')
+#for path in pathlist:
      # because path is object not string
-     path_in_str = str(path)
-     region = str(os.path.basename(path_in_str)).strip(".csv")
+     #path_in_str = str(path)
+     #region = str(os.path.basename(path_in_str)).strip(".csv")
      #print (region)
      #print(path_in_str)
 
